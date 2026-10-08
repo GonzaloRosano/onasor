@@ -66,3 +66,17 @@ Las descargas manuales están en [Releases](https://github.com/GonzaloRosano/ona
 ## Desinstalar
 
 Borrá la carpeta `%LOCALAPPDATA%\Programs\<herramienta>` y sacala del PATH (Configuración › Sistema › Acerca de › Configuración avanzada del sistema › Variables de entorno).
+
+## onasor-claude
+
+Lanzador y panel de Claude Code: proyectos y sesiones para retomar con un click, cuota de 5 horas y 7 días, en qué se van los tokens, la memoria (auto-memoria y engram) y los ajustes (modelo, plugins, skills).
+
+```powershell
+irm https://raw.githubusercontent.com/GonzaloRosano/onasor/main/claude.ps1 | iex
+```
+
+En Linux:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/GonzaloRosano/onasor/main/claude.sh | sh
+```
