@@ -34,6 +34,20 @@ En Linux (se instala en `/usr/local/bin` con sudo, o en `~/.local/bin`):
 curl -fsSL https://raw.githubusercontent.com/GonzaloRosano/onasor/main/ports.sh | sh
 ```
 
+## onasor-mc
+
+Launcher de Minecraft para la terminal: instancias separadas, vanilla, Fabric, Forge y NeoForge, mods y modpacks de Modrinth, y el Java correcto para cada versión, bajado solo. Para entrar se usa la cuenta Microsoft.
+
+```powershell
+irm https://raw.githubusercontent.com/GonzaloRosano/onasor/main/mc.ps1 | iex
+```
+
+En Linux:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/GonzaloRosano/onasor/main/mc.sh | sh
+```
+
 ## Cómo funciona el instalador
 
 - Descarga el `.exe` del último release de la herramienta, para tu arquitectura (x64 o ARM64).
@@ -47,7 +61,7 @@ Para elegir la versión, la carpeta o no tocar el PATH:
 & ([scriptblock]::Create((irm https://raw.githubusercontent.com/GonzaloRosano/onasor/main/vps.ps1))) -Version v1.4.0 -Dir C:\herramientas -NoPath
 ```
 
-Las descargas manuales están en [Releases](https://github.com/GonzaloRosano/onasor/releases): los tags `vps-v*` son de onasor-vps, los `cli-v*` de onasor-cli y los `ports-v*` de onasor-ports.
+Las descargas manuales están en [Releases](https://github.com/GonzaloRosano/onasor/releases): los tags `vps-v*` son de onasor-vps, los `cli-v*` de onasor-cli los `ports-v*` de onasor-ports y los `mc-v*` de onasor-mc.
 
 ## Desinstalar
 
